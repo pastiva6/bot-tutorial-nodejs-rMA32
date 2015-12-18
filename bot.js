@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/boot/;  botRegexDL = /^\/dl/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/drunk/;botRegexGTA = /^\/yt/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/red/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/cheese/;
-      botRegexCC = /^\/jeff/; botRegexRip = /^\/ptown/; botRegexRip =/^\/richjoseph/;
+      botRegexCC = /^\/jeff/; botRegexBye = /^\/ptown/; botRegexRip =/^\/richjoseph/; botRegexCan =/^\/mounties/; 
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -69,6 +69,11 @@ function respond() {
     postMessage("http://people-equation.com/wp-content/uploads/RIP_iStock_000013987544XSmall.jpg");
     this.res.end();
   }
+  else if(request.text && botRegexBye.test(request.text)) {
+    this.res.writeHead(200);
+    postmessage("http://people-equation.com/wp-content/uploads/RIP_iStock_000013987544XSmall.jpg");
+    this.res.end();
+  }
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
     postMessage("¯\\_(ツ)_/¯");
@@ -94,7 +99,11 @@ function respond() {
     postMessage("http://3.bp.blogspot.com/-Hhc6h-HCu8w/UVRXYB6-w8I/AAAAAAAAa0A/LJghsvEd-Pw/s1600/Cheese_205.jpg");
     this.res.end();
   }
-  
+  else if(request.text && botRegexCan.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://imagizer.imageshack.us/a/img831/4374/garbagetruckbagtosssave.gif");
+    this.res.end();
+  }
   else {
     console.log("don't care");
     this.res.writeHead(200);
