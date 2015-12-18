@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/boot/;  botRegexDL = /^\/dl/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/drunk/;botRegexGTA = /^\/yt/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/red/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/cheese/;
-      botRegexCC = /^\/jeff/;
+      botRegexCC = /^\/jeff/; botRegexRip = /^\/ptown/; botRegexRip =/^\/richjoseph/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -54,7 +54,6 @@ function respond() {
     postMessage("http://daddyleagues.com/loc/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
-
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
@@ -64,7 +63,12 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://www.reddit.com/r/maddenloc");
     this.res.end();
-  } 
+  }  
+  else if(request.text && botRegexRip.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://people-equation.com/wp-content/uploads/RIP_iStock_000013987544XSmall.jpg");
+    this.res.end();
+  }
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
     postMessage("¯\\_(ツ)_/¯");
