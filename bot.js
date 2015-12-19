@@ -7,8 +7,8 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/boot/;  botRegexDL = /^\/dl/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/drunk/;botRegexGTA = /^\/yt/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/red/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/cheese/;
-      botRegexCC = /^\/jeff/; botRegexBye = /^\/ptown/; botRegexRip =/^\/richjoseph/; botRegexCan =/^\/mounties/; 
+      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/red/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; 
+      botRegexCC = /^\/jeff/; botRegexBye = /^\/ptown/; botRegexRip =/^\/richjoseph/; botRegexCan =/^\/mounties/; botRegexTy=/^\/eagles/;  
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -20,6 +20,11 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/loc/team/"+request.text.substring(5,8)+"/depthchart");
+    this.res.end();
+  }
+  else if(request.text && botRegexTy.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://img.ifcdn.com/images/5eb7e760ced81a165b319543aab4a48752390d98a4d7a0f13f08a077d4ac7837_1.gif");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -71,7 +76,7 @@ function respond() {
   }
   else if(request.text && botRegexBye.test(request.text)) {
     this.res.writeHead(200);
-    postmessage("http://people-equation.com/wp-content/uploads/RIP_iStock_000013987544XSmall.jpg");
+    postMessage("http://people-equation.com/wp-content/uploads/RIP_iStock_000013987544XSmall.jpg");
     this.res.end();
   }
   else if(request.text && botRegexSh.test(request.text)) {
