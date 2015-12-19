@@ -19,7 +19,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/loc/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/loc/team/"+request.text.substring(4,7)+"/depthchart");
     this.res.end();
   }
   else if(request.text && botRegexTy.test(request.text)) {
@@ -49,7 +49,7 @@ function respond() {
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/loc/team/"+request.text.substring(4,7)+"/schedule");
+    postMessage("http://daddyleagues.com/loc/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
