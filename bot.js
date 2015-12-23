@@ -8,7 +8,8 @@ function respond() {
       botRegex = /^\/boot/;  botRegexDL = /^\/dl/i; botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/drunk/;botRegexGTA = /^\/yt/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/red/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
-      botRegexBye = /^\/ptown/; botRegexRip =/^\/richjoseph/; botRegexCan =/^\/mounties/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/blog/;   
+      botRegexBye = /^\/ptown/; botRegexRip =/^\/richjoseph/; botRegexCan =/^\/mounties/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/blog/; 
+      botRegexL = /^\/l/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -17,6 +18,10 @@ function respond() {
     postMessage("http://www.landaustore.co.uk/images/footwear/timberland/mens/timberland-mens-timberland-boots-mens-6-inch-boot-brown-37307.jpg");
     this.res.end();
   } 
+  else if(request.text && botRegexL.test(request.yext)) {
+    this.res.writeHead(200);
+    postMessage("http://imgur.com/mFPQM8B")
+  }
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/loc/team/"+request.text.substring(4,7)+"/depthchart");
