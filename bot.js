@@ -21,6 +21,7 @@ function respond() {
   else if(request.text && botRegexL.test(request.yext)) {
     this.res.writeHead(200);
     postMessage("http://imgur.com/mFPQM8B")
+    this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
