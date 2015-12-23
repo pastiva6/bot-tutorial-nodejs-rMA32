@@ -24,7 +24,7 @@ function respond() {
   }
   else if(request.text && botRegexTy.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://img.ifcdn.com/images/5eb7e760ced81a165b319543aab4a48752390d98a4d7a0f13f08a077d4ac7837_1.gif");
+    postMessage("http://assets.sbnation.com/assets/562635/eagles_fan.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
