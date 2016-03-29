@@ -5,10 +5,10 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/boot/;  botRegexDL = /^\/dl/i; botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/boot/;  botRegexDL = /^\/dl/i; botRegexSalt = /^\/fin/;botRegexRules = /^\/rules/
       botRegexAd=/^\/drunk/;botRegexGTA = /^\/yt/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/red/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
-      botRegexBye = /^\/ptown/; botRegexRip =/^\/richjoseph/; botRegexCan =/^\/mounties/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/blog/; 
+      botRegexBye = /^\/ptown/; botRegexRip =/^\/jd/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/blog/; 
       botRegexL = /^\/frog/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
@@ -35,7 +35,7 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.minus.com/ighljy0ejkExG.gif");
+    postMessage("http://www.qnews.com.au/wp-content/uploads/2015/01/Hello-Sailor.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
@@ -112,7 +112,7 @@ function respond() {
   }
   else if(request.text && botRegexCan.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://imagizer.imageshack.us/a/img831/4374/garbagetruckbagtosssave.gif");
+    postMessage("http://edition.cnn.com/2009/US/11/03/black.cowboys/t1larg.black.cowboys.jpg");
     this.res.end();
   }
   else if(request.text && botRegexBlog.test(request.text)) {
