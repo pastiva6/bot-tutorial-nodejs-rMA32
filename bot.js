@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/boot/;  botRegexDL = /^\/dl/i; botRegexSalt = /^\/fin/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/drunk/;botRegexGTA = /^\/yt/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/drunk/;botRegexGTA = /^\/cory/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/red/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
       botRegexBye = /^\/stan/; botRegexRip =/^\/jd/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/blog/; 
       botRegexL = /^\/frog/;
@@ -50,7 +50,7 @@ function respond() {
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UC3G0cBakseGjp-mgxfS3bZQ");
+    postMessage("http://t.fod4.com/t/2d1b424fa2/c640x360_20.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
