@@ -25,7 +25,7 @@ function respond() {
   }
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/loc/team/"+request.text.substring(4,7)+"/depthchart");
+    postMessage("http://daddyleagues.com/bless/team/"+request.text.substring(4,7)+"/depthchart");
     this.res.end();
   }
   else if(request.text && botRegexTy.test(request.text)) {
@@ -45,7 +45,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/loc/rules");
+    postMessage("http://daddyleagues.com/bless/rules");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
@@ -55,14 +55,14 @@ function respond() {
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/loc/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/bless/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/loc/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/bless/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
   else if(request.text && botRegexTw.test(request.text)) {
@@ -82,7 +82,7 @@ function respond() {
   }
   else if(request.text && botRegexBye.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/loc/standings/league");
+    postMessage("http://www.daddyleagues.com/bless/standings/league");
     this.res.end();
   }
   else if(request.text && botRegexSh.test(request.text)) {
@@ -117,7 +117,7 @@ function respond() {
   }
   else if(request.text && botRegexBlog.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/loc/blog");
+    postMessage("http://daddyleagues.com/bless/blog");
     this.res.end();
   }
   else {
