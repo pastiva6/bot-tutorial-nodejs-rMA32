@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/boot/;  botRegexDL = /^\/dl/i; botRegexSalt = /^\/fin/;botRegexRules = /^\/rules/
       botRegexAd=/^\/drunk/;botRegexGTA = /^\/bills/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
-      botRegexBye = /^\/stan/; botRegexRip =/^\/jd/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
+      botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/frog/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
@@ -77,7 +77,7 @@ function respond() {
   }  
   else if(request.text && botRegexRip.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://people-equation.com/wp-content/uploads/RIP_iStock_000013987544XSmall.jpg");
+    postMessage("https://www.youtube.com/watch?v=ZVUyyHYkBHk");
     this.res.end();
   }
   else if(request.text && botRegexBye.test(request.text)) {
