@@ -30,7 +30,7 @@ function respond() {
   }
     else if(request.text && botRegexBtg.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://imagesmtv-a.akamaihd.net/uri/mgid:ao:image:mtv.com:47733?quality=0.8&format=jpg")
+    postMessage("http://vignette2.wikia.nocookie.net/disney/images/f/f2/The-Emperors-New-Groove-59bff3fa.jpg/revision/latest?cb=20120822010835")
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
