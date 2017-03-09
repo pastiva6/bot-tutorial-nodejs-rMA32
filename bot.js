@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/drunk/;botRegexGTA = /^\/bills/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
-      botRegexL = /^\/frog/;
+      botRegexL = /^\/teddy/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -20,7 +20,7 @@ function respond() {
   } 
   else if(request.text && botRegexL.test(request.yext)) {
     this.res.writeHead(200);
-    postMessage("https://i.ytimg.com/vi/OqhZWf9Aqkk/hqdefault.jpg")
+    postMessage("https://s-media-cache-ak0.pinimg.com/736x/4b/34/ee/4b34ee4daa6466f310debaf771fbc8dc.jpg")
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
