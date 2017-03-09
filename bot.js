@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/drunk/;botRegexGTA = /^\/klampz/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
-      botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/;
+      botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -17,7 +17,12 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://www.landaustore.co.uk/images/footwear/timberland/mens/timberland-mens-timberland-boots-mens-6-inch-boot-brown-37307.jpg");
     this.res.end();
-  } 
+  }
+    else if(request.text && botRegexRtro.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/abdb3734f6784038b0a801ca28c120a7_zpsdga9x9br.jpeg")
+    this.res.end();
+  }
   else if(request.text && botRegexL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/736x/4b/34/ee/4b34ee4daa6466f310debaf771fbc8dc.jpg")
@@ -25,7 +30,7 @@ function respond() {
   }
     else if(request.text && botRegexBtg.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://s-media-cache-ak0.pinimg.com/736x/4b/34/ee/4b34ee4daa6466f310debaf771fbc8dc.jpg")
+    postMessage("http://imagesmtv-a.akamaihd.net/uri/mgid:ao:image:mtv.com:47733?quality=0.8&format=jpg")
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
