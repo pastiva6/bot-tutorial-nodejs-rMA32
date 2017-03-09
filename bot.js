@@ -18,7 +18,7 @@ function respond() {
     postMessage("http://www.landaustore.co.uk/images/footwear/timberland/mens/timberland-mens-timberland-boots-mens-6-inch-boot-brown-37307.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexL.test(request.yext)) {
+  else if(request.text && botRegexL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/736x/4b/34/ee/4b34ee4daa6466f310debaf771fbc8dc.jpg")
     this.res.end();
