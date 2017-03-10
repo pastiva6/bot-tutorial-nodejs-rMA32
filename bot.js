@@ -11,7 +11,7 @@ function respond() {
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
-      botRegexJres = /^\/jres/
+      botRegexJres = /^\/jres/; botRegexBos = /^\/bos/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -20,6 +20,12 @@ function respond() {
     postMessage("http://www.landaustore.co.uk/images/footwear/timberland/mens/timberland-mens-timberland-boots-mens-6-inch-boot-brown-37307.jpg");
     this.res.end();
   }
+
+      else if(request.text && botRegexBos.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.wessexscene.co.uk/wp-content/uploads/2016/07/2a71ca20-3902-4ae0-92ed-05f0825071bf.jpg")
+    this.res.end();
+  }  
       else if(request.text && botRegexJres.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media0.giphy.com/media/bmgrw4j3PdFWE/200_s.gif")
