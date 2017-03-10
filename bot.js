@@ -22,7 +22,7 @@ function respond() {
   }
       else if(request.text && botRegexJres.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://s-media-cache-ak0.pinimg.com/236x/5b/7e/a4/5b7ea4661af8200c8a351593274e2733.jpg")
+    postMessage("https://media0.giphy.com/media/bmgrw4j3PdFWE/200_s.gif")
     this.res.end();
   }  
       else if(request.text && botRegexTrade.test(request.text)) {
