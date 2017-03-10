@@ -54,7 +54,7 @@ function respond() {
     postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/abdb3734f6784038b0a801ca28c120a7_zpsdga9x9br.jpeg")
     this.res.end();
   }
-  else if(request.text && botRegexL.test(request.text)) {
+    else if(request.text && botRegexL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/736x/4b/34/ee/4b34ee4daa6466f310debaf771fbc8dc.jpg")
     this.res.end();
