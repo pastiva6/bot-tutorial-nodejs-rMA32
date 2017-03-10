@@ -57,7 +57,7 @@ function respond() {
   }
       else if(request.text && botRegexKab.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://40.media.tumblr.com/8048deeee41ad603ab0c3fe5dbea7c0e/tumblr_nnjgpilUY81ut248go1_500.jpg")
+    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/d172e280eff14ca2befcca09a95a32a3_zpsd8bl7mh1.jpeg")
     this.res.end();
   }
     else if(request.text && botRegexRtro.test(request.text)) {
