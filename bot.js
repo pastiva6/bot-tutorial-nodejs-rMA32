@@ -11,6 +11,7 @@ function respond() {
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
+      botRegexJres = /^\/jres/
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -19,6 +20,11 @@ function respond() {
     postMessage("http://www.landaustore.co.uk/images/footwear/timberland/mens/timberland-mens-timberland-boots-mens-6-inch-boot-brown-37307.jpg");
     this.res.end();
   }
+      else if(request.text && botRegexJres.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://s-media-cache-ak0.pinimg.com/236x/5b/7e/a4/5b7ea4661af8200c8a351593274e2733.jpg")
+    this.res.end();
+  }  
       else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/bless/forum/forum/6788")
