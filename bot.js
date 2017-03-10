@@ -10,13 +10,18 @@ function respond() {
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
-      botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/;
+      botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.landaustore.co.uk/images/footwear/timberland/mens/timberland-mens-timberland-boots-mens-6-inch-boot-brown-37307.jpg");
+    this.res.end();
+  }
+                else if(request.text && botRegexBilly.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://static.tumblr.com/47b7ec0e730baca2b6408e1c9efe7661/jikyzdc/gVboawmm5/tumblr_static_ajzyal63zzcokg04gwckk80ko.jpg")
     this.res.end();
   }
               else if(request.text && botRegexBlake.test(request.text)) {
