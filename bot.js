@@ -93,7 +93,7 @@ function respond() {
   }
     else if(request.text && botRegexBtg.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://vignette4.wikia.nocookie.net/candy-crush-saga/images/e/e4/Troll_dad_by_rober_raik-d4cxnq8.png/revision/20150411021247")
+    postMessage("http://vignette4.wikia.nocookie.net/candy-crush-saga/images/e/e4/Troll_dad_by_rober_raik-d4cxnq8.png")
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
