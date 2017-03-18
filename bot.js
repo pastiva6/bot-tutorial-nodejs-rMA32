@@ -12,7 +12,7 @@ function respond() {
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/jres/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexSaintz = /^\/saintz/; botRegexYoni = /^\/yoni/;
-      botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;
+      botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -29,6 +29,21 @@ function respond() {
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/70b4f40e97ba460489bf8c09fd7b29a6_zpscxweoxth.jpeg")
+    this.res.end();
+  } 
+              else if(request.text && botRegexSav.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://pbs.twimg.com/media/CLXeUiKUcAAtp-w.jpg")
+    this.res.end();
+  } 
+          else if(request.text && botRegexMax.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://pics.onsizzle.com/i-sta%CE%B3-stlt-stay-humble-and-hustle-hard-my-friends-7475236.png")
+    this.res.end();
+  } 
+        else if(request.text && botRegexCap.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://68.media.tumblr.com/74afb0a7ef2c35c580219745df7b65aa/tumblr_o4uihpOOLM1sdqa1xo1_500.png")
     this.res.end();
   } 
         else if(request.text && botRegexYoni.test(request.text)) {
