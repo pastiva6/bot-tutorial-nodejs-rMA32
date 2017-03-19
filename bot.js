@@ -28,7 +28,7 @@ function respond() {
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/70b4f40e97ba460489bf8c09fd7b29a6_zpscxweoxth.jpeg")
+    postMessage("http://s1380.photobucket.com/user/Stephane_Baganizi/media/kelcebless_zpsc5qs8ree.jpg")
     this.res.end();
   } 
               else if(request.text && botRegexSav.test(request.text)) {
