@@ -23,7 +23,7 @@ function respond() {
   }
             else if(request.text && botRegexNewz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/newsletter1_zpsv6ddwxsm.jpg")
+    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/lockeroomvol2_zpsfwzjig2a.jpg")
     this.res.end();
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
