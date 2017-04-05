@@ -38,7 +38,7 @@ function respond() {
   } 
           else if(request.text && botRegexMax.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://images.complex.com/complex/images/c_limit,w_680/fl_lossy,pg_1,q_auto/evv6um4qxrdwmbwdehv1/kendrick-lamar-humble-cover")
+    postMessage("http://2ykov18qyj81ii56523ib0ue.wpengine.netdna-cdn.com/wp-content/uploads/2017/03/kendrick-lamar-humble.jpg")
     this.res.end();
   } 
         else if(request.text && botRegexCap.test(request.text)) {
