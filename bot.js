@@ -38,7 +38,7 @@ function respond() {
   } 
           else if(request.text && botRegexMax.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://pics.onsizzle.com/i-sta%CE%B3-stlt-stay-humble-and-hustle-hard-my-friends-7475236.png")
+    postMessage("http://images.complex.com/complex/images/c_limit,w_680/fl_lossy,pg_1,q_auto/evv6um4qxrdwmbwdehv1/kendrick-lamar-humble-cover")
     this.res.end();
   } 
         else if(request.text && botRegexCap.test(request.text)) {
