@@ -13,7 +13,7 @@ function respond() {
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/jres/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexSaintz = /^\/saintz/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexCurly = /^\/curly/;
-      botRegexThor = /^\/thor/;
+      botRegexThor = /^\/thor/; botRegexRthor = /^\/realthor/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -30,6 +30,11 @@ function respond() {
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/gurleyblesser_zpscqcvssmt.jpg")
+    this.res.end();
+  } 
+             else if(request.text && botRegexRthor.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://s-media-cache-ak0.pinimg.com/originals/0c/43/63/0c43630b71807fa6e9154fc0501dfe40.jpg")
     this.res.end();
   } 
                 else if(request.text && botRegexThor.test(request.text)) {
