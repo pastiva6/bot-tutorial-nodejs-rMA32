@@ -109,7 +109,7 @@ function respond() {
   }
             else if(request.text && botRegexBanner.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/fb6dbd82a3e446a38f88c26b3821829c_zps59l79ve7.jpeg")
+    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/cardsbannersb_zps5x8j5llf.jpg")
     this.res.end();
   }
           else if(request.text && botRegexJoey.test(request.text)) {
