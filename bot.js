@@ -13,7 +13,7 @@ function respond() {
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/jres/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexSaintz = /^\/saintz/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexCurly = /^\/curly/;
-      botRegexThor = /^\/thor/; botRegexRthor = /^\/realthor/;
+      botRegexThor = /^\/thor/; botRegexRthor = /^\/realthor/; botRegexSclipz = /^\/savageclipz/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -27,9 +27,14 @@ function respond() {
     postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/lockeroomvol6_zpsxedaxjwu.jpg")
     this.res.end();
   } 
+            else if(request.text && botRegexSclipz.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.youtube.com/watch?v=kiOLNf_5cL0&t=156s")
+    this.res.end();
+  } 
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/weathersbless_zpscqt4nutm.jpg")
+    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/hubbardbless_zpshdtmat4k.jpg")
     this.res.end();
   } 
              else if(request.text && botRegexRthor.test(request.text)) {
