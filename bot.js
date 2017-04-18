@@ -24,7 +24,7 @@ function respond() {
   }
             else if(request.text && botRegexNewz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/lockeroomvol6_zpsxedaxjwu.jpg")
+    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/lockeroomvol7_zps08yghsml.jpg")
     this.res.end();
   } 
             else if(request.text && botRegexSclipz.test(request.text)) {
