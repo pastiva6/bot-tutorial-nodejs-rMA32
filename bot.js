@@ -34,7 +34,7 @@ function respond() {
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/hubbardbless_zpshdtmat4k.jpg")
+    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/ramseybless_zps8txc26rc.jpg")
     this.res.end();
   } 
              else if(request.text && botRegexRthor.test(request.text)) {
