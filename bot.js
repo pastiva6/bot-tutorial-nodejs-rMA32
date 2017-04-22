@@ -13,7 +13,7 @@ function respond() {
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/jres/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexSaintz = /^\/saintz/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexCurly = /^\/curly/;
-      botRegexThor = /^\/thor/; botRegexRthor = /^\/realthor/; botRegexSclipz = /^\/savagemedia/;
+      botRegexThor = /^\/thor/; botRegexRthor = /^\/realthor/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/;botRegexJesse = /^\/jesse/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -27,27 +27,37 @@ function respond() {
     postMessage("http://i.imgur.com/yDh7TiV.jpg")
     this.res.end();
   } 
-            else if(request.text && botRegexSclipz.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://www.youtube.com/watch?v=kiOLNf_5cL0&t=156s")
-    this.res.end();
-  } 
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/ramseybless_zps8txc26rc.jpg")
     this.res.end();
   } 
-             else if(request.text && botRegexRthor.test(request.text)) {
+              else if(request.text && botRegexSclipz.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.youtube.com/watch?v=kiOLNf_5cL0&t=156s")
+    this.res.end();
+  } 
+            else if(request.text && botRegexBtgb.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/bless/team/NYJ")
+    this.res.end();
+  }   
+            else if(request.text && botRegexJesse.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAATDAAAAJDhkYTE4OWRiLWQxYTEtNGY2OS1iMTNlLWMyNWZjYzAxMDQ2NA.jpg")
+    this.res.end();
+  }   
+            else if(request.text && botRegexRthor.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/originals/0c/43/63/0c43630b71807fa6e9154fc0501dfe40.jpg")
     this.res.end();
   } 
-                else if(request.text && botRegexThor.test(request.text)) {
+            else if(request.text && botRegexThor.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://vignette4.wikia.nocookie.net/ideas/images/7/7b/Thor-%28-%29_Marvel.com_Art.jpg")
     this.res.end();
   } 
-              else if(request.text && botRegexCurly.test(request.text)) {
+            else if(request.text && botRegexCurly.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://cdn.meme.am/cache/instances/folder231/500x/55668231.jpg")
     this.res.end();
