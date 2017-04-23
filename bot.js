@@ -29,7 +29,7 @@ function respond() {
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/ramseybless_zps8txc26rc.jpg")
+    postMessage("http://imgur.com/a/tYueO.jpg")
     this.res.end();
   } 
               else if(request.text && botRegexSclipz.test(request.text)) {
