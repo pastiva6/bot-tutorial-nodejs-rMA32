@@ -34,7 +34,7 @@ function respond() {
   } 
               else if(request.text && botRegexSclipz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/watch?v=kiOLNf_5cL0&t=156s")
+    postMessage("https://youtu.be/xnEAEpmw9fw")
     this.res.end();
   } 
             else if(request.text && botRegexBtgb.test(request.text)) {
