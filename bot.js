@@ -34,7 +34,7 @@ function respond() {
   } 
               else if(request.text && botRegexSclipz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://youtu.be/xnEAEpmw9fw")
+    postMessage("https://vimeo.com/214804803")
     this.res.end();
   } 
             else if(request.text && botRegexBtgb.test(request.text)) {
