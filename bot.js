@@ -129,7 +129,7 @@ function respond() {
   }
           else if(request.text && botRegexJoey.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/24264eb0c41b4cb392c5a0d873bf4700_zpsc75t7sgz.jpeg")
+    postMessage("http://i.imgur.com/y3FoluK.jpg")
     this.res.end();
   }
         else if(request.text && botRegexQueso.test(request.text)) {
