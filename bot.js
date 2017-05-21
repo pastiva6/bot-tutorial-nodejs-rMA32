@@ -124,7 +124,7 @@ function respond() {
   }
             else if(request.text && botRegexBanner.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1380.photobucket.com/albums/ah170/Stephane_Baganizi/cardsbannersb_zps5x8j5llf.jpg")
+    postMessage("http://i.imgur.com/7RwH66e.jpg")
     this.res.end();
   }
           else if(request.text && botRegexJoey.test(request.text)) {
