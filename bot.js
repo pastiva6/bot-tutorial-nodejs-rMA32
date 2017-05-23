@@ -129,7 +129,7 @@ function respond() {
   }
           else if(request.text && botRegexJoey.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/YKy0ztu.jpg")
+    postMessage("http://i.imgur.com/fZlV48Z.jpg")
     this.res.end();
   }
         else if(request.text && botRegexQueso.test(request.text)) {
