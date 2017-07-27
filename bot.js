@@ -124,7 +124,7 @@ function respond() {
   }
             else if(request.text && botRegexBanner.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/iHmm9ay.jpg")
+    postMessage("http://i.imgur.com/1uFKq3o.jpg")
     this.res.end();
   }
           else if(request.text && botRegexJoey.test(request.text)) {
