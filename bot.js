@@ -44,7 +44,7 @@ function respond() {
   }   
             else if(request.text && botRegexCab.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAATDAAAAJDhkYTE4OWRiLWQxYTEtNGY2OS1iMTNlLWMyNWZjYzAxMDQ2NA.jpg")
+    postMessage("http://daddyleagues.com/bless/team/NE")
     this.res.end();
   }   
             else if(request.text && botRegexRthor.test(request.text)) {
