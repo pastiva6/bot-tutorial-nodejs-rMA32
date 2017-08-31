@@ -47,11 +47,6 @@ function respond() {
     postMessage("http://daddyleagues.com/bless/team/NE")
     this.res.end();
   }   
-            else if(request.text && botRegexRthor.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/bless)
-    this.res.end();
-  } 
             else if(request.text && botRegexThor.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://vignette4.wikia.nocookie.net/ideas/images/7/7b/Thor-%28-%29_Marvel.com_Art.jpg")
