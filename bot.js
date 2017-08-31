@@ -13,7 +13,7 @@ function respond() {
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/jres/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexSaintz = /^\/saintz/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexCurly = /^\/curly/;
-      botRegexThor = /^\/thor/; botRegexRthor = /^\/realthor/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/;botRegexJesse = /^\/jesse/;
+      botRegexThor = /^\/thor/; botRegexRthor = /^\/realthor/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/;botRegexCab = /^\/PatsMedia/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -42,14 +42,14 @@ function respond() {
     postMessage("http://daddyleagues.com/bless/team/NYJ")
     this.res.end();
   }   
-            else if(request.text && botRegexJesse.test(request.text)) {
+            else if(request.text && botRegexCab.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAATDAAAAJDhkYTE4OWRiLWQxYTEtNGY2OS1iMTNlLWMyNWZjYzAxMDQ2NA.jpg")
     this.res.end();
   }   
             else if(request.text && botRegexRthor.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://s-media-cache-ak0.pinimg.com/originals/0c/43/63/0c43630b71807fa6e9154fc0501dfe40.jpg")
+    postMessage("http://daddyleagues.com/bless/team/NE")
     this.res.end();
   } 
             else if(request.text && botRegexThor.test(request.text)) {
