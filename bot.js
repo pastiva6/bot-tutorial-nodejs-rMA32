@@ -49,7 +49,7 @@ function respond() {
   }   
             else if(request.text && botRegexRthor.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/bless/team/NE")
+    postMessage("http://daddyleagues.com/bless)
     this.res.end();
   } 
             else if(request.text && botRegexThor.test(request.text)) {
