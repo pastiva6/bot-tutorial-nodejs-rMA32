@@ -13,7 +13,7 @@ function respond() {
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/jres/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexSaintz = /^\/saintz/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexCurly = /^\/curly/;
-      botRegexThor = /^\/thor/; botRegexRthor = /^\/realthor/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
+      botRegexThor = /^\/thor/; botRegexRthor = /^\/chargersmedia/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -49,7 +49,7 @@ function respond() {
   }   
             else if(request.text && botRegexThor.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://vignette4.wikia.nocookie.net/ideas/images/7/7b/Thor-%28-%29_Marvel.com_Art.jpg")
+    postMessage("http://daddyleagues.com/bless/team/SD")
     this.res.end();
   } 
             else if(request.text && botRegexCurly.test(request.text)) {
