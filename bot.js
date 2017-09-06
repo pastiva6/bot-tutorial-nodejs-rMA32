@@ -11,9 +11,9 @@ function respond() {
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
-      botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexSaintz = /^\/saintz/; botRegexYoni = /^\/yoni/;
+      botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexJlo = /^\/cardsmedia/;
-      botRegexThor = /^\/thor/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
+      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -79,7 +79,7 @@ function respond() {
   } 
        else if(request.text && botRegexSaintz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://cdn.gamer-network.net/2016/usgamer/madden17cross_playart.jpg")
+    postMessage("http://daddyleagues.com/bless/team/NO")
     this.res.end();
   } 
       else if(request.text && botRegexJoe.test(request.text)) {
