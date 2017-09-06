@@ -12,7 +12,7 @@ function respond() {
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
       botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/jres/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexSaintz = /^\/saintz/; botRegexYoni = /^\/yoni/;
-      botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexCurly = /^\/curly/;
+      botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexJlo = /^\/cardsmedia/;
       botRegexThor = /^\/thor/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
@@ -24,7 +24,7 @@ function respond() {
   }
             else if(request.text && botRegexNewz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/gYawNxp.jpg")
+    postMessage("http://i.imgur.com/Ive4wJo.jpg")
     this.res.end();
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
@@ -52,9 +52,9 @@ function respond() {
     postMessage("http://daddyleagues.com/bless/team/LAC")
     this.res.end();
   } 
-            else if(request.text && botRegexCurly.test(request.text)) {
+            else if(request.text && botRegexJlo.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://cdn.meme.am/cache/instances/folder231/500x/55668231.jpg")
+    postMessage("http://daddyleagues.com/bless/team/ARI")
     this.res.end();
   } 
               else if(request.text && botRegexSav.test(request.text)) {
