@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
-      botRegexJoey = /^\/cheesyjoey/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
+      botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexJlo = /^\/cardsmedia/;
       botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
@@ -122,9 +122,9 @@ function respond() {
     postMessage("http://i.imgur.com/1uFKq3o.jpg")
     this.res.end();
   }
-          else if(request.text && botRegexJoey.test(request.text)) {
+          else if(request.text && botRegexColts.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/fZlV48Z.jpg")
+    postMessage("http://daddyleagues.com/bless/team/IND")
     this.res.end();
   }
         else if(request.text && botRegexQueso.test(request.text)) {
