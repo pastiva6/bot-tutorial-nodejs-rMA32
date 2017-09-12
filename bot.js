@@ -29,7 +29,7 @@ function respond() {
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/kns7qsS.jpg")
+    postMessage("http://i.imgur.com/SxwMnvb.jpg")
     this.res.end();
   } 
               else if(request.text && botRegexSclipz.test(request.text)) {
