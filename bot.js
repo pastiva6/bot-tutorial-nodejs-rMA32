@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
-      botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/blake/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
+      botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/daclipz/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexJlo = /^\/cardsmedia/;
       botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
@@ -114,7 +114,7 @@ function respond() {
   }
               else if(request.text && botRegexBlake.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://memecrunch.com/meme/4TP3/sir-please-put-your-penis-away/image.jpg")
+    postMessage("https://www.youtube.com/embed/Olf4Yu2vKhI")
     this.res.end();
   }
             else if(request.text && botRegexBanner.test(request.text)) {
