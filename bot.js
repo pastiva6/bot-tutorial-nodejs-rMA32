@@ -6,9 +6,9 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/boot/;  botRegexDL = /^\/dl/i; botRegexSalt = /^\/jlo/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/drunk/;botRegexGTA = /^\/klampz/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/kendrick/;botRegexGTA = /^\/klampz/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
-      botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexTy=/^\/eagles/; botRegexBlog=/^\/immy/; 
+      botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexMcg=/^\/mcguffy/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/daclipz/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
@@ -157,9 +157,9 @@ function respond() {
     postMessage("http://daddyleagues.com/bless/team/"+request.text.substring(4,7)+"/depthchart");
     this.res.end();
   }
-  else if(request.text && botRegexTy.test(request.text)) {
+  else if(request.text && botRegexMcg.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://assets.sbnation.com/assets/562635/eagles_fan.jpg");
+    postMessage("https://i.imgur.com/ufyZw2d.png");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -169,7 +169,7 @@ function respond() {
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.huffpost.com/gen/1010833/thumbs/o-DESMOND-BRYANT-MUGSHOT-facebook.jpg");
+    postMessage("https://i.imgur.com/TdtUlu9.gif");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
