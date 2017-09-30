@@ -10,10 +10,10 @@ function respond() {
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexMcg=/^\/mcguffy/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
-      botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/daclipz/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
+      botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexJlo = /^\/cardsmedia/;
-      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/savagemedia/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
+      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/daclipz/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -34,7 +34,7 @@ function respond() {
   } 
               else if(request.text && botRegexSclipz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://vimeo.com/214804803")
+    postMessage("https://www.youtube.com/embed/EQVP5mN23ws")
     this.res.end();
   } 
             else if(request.text && botRegexBtgb.test(request.text)) {
@@ -114,7 +114,7 @@ function respond() {
   }
               else if(request.text && botRegexBlake.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/embed/Olf4Yu2vKhI")
+    postMessage("http://i2.cdn.cnn.com/cnnnext/dam/assets/170704145417-urkel-1.jpg")
     this.res.end();
   }
             else if(request.text && botRegexBanner.test(request.text)) {
