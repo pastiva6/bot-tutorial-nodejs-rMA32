@@ -59,17 +59,17 @@ function respond() {
   } 
               else if(request.text && botRegexSav.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://pbs.twimg.com/media/CLXeUiKUcAAtp-w.jpg")
+    postMessage("https://images-na.ssl-images-amazon.com/images/I/41U9MTJDaBL._SY355_.jpg")
     this.res.end();
   } 
           else if(request.text && botRegexMax.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://2ykov18qyj81ii56523ib0ue.wpengine.netdna-cdn.com/wp-content/uploads/2017/03/kendrick-lamar-humble.jpg")
+    postMessage("https://images-na.ssl-images-amazon.com/images/I/41U9MTJDaBL._SY355_.jpg")
     this.res.end();
   } 
         else if(request.text && botRegexCap.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://68.media.tumblr.com/74afb0a7ef2c35c580219745df7b65aa/tumblr_o4uihpOOLM1sdqa1xo1_500.png")
+    postMessage("https://images-na.ssl-images-amazon.com/images/I/41U9MTJDaBL._SY355_.jpg")
     this.res.end();
   } 
         else if(request.text && botRegexYoni.test(request.text)) {
