@@ -13,7 +13,8 @@ function respond() {
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexJlo = /^\/cardsmedia/;
-      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/daclipz/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
+      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/daclipz/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\afcnorth/; botRegexAs = /^\/afcsouth/;
+      botRegexAe = /^\/afcnorth/; botRegexNn = /^\/nfcnorth/; botRegexNe = /^\/nfceast/; botRegexNw = /^\/nfcwest/; botRegexNs = /^\/nfcsouth/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -31,7 +32,47 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.imgur.com/0ufgJdV.jpg")
     this.res.end();
-  } 
+  }
+              else if(request.text && botRegexAn.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/jdm6TJi.jpg")
+    this.res.end();
+  }   
+              else if(request.text && botRegexAs.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/B648KQL.jpg")
+    this.res.end();
+  }     
+              else if(request.text && botRegexAw.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/uCH0QtP.jpg")
+    this.res.end();
+  }     
+               else if(request.text && botRegexAe.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/FNsC5rx.jpg")
+    this.res.end();
+  }     
+              else if(request.text && botRegexNs.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/NFKyk9Z.jpg")
+    this.res.end();
+  }     
+              else if(request.text && botRegexNn.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/GPDBaUe.jpg")
+    this.res.end();
+  }
+              else if(request.text && botRegexNe.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/SoiyVek.jpg")
+    this.res.end();
+  }     
+              else if(request.text && botRegexNw.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/2pWGqlm.jpg")
+    this.res.end();
+  }     
               else if(request.text && botRegexSclipz.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://www.youtube.com/embed/EQVP5mN23ws")
