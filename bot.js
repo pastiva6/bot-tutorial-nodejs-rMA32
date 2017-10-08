@@ -13,7 +13,7 @@ function respond() {
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexJlo = /^\/cardsmedia/;
-      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/daclipz/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\afcnorth/; botRegexAs = /^\/afcsouth/;
+      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/daclipz/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\/afcnorth/; botRegexAs = /^\/afcsouth/;
       botRegexAe = /^\/afcnorth/; botRegexNn = /^\/nfcnorth/; botRegexNe = /^\/nfceast/; botRegexNw = /^\/nfcwest/; botRegexNs = /^\/nfcsouth/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
