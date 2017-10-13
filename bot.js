@@ -11,8 +11,8 @@ function respond() {
       botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexMcg=/^\/mcguffy/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
-      botRegexJres = /^\/falconsmedia/; botRegexBos = /^\/bos/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
-      botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexCap = /^\/elcapitan/; botRegexJlo = /^\/cardsmedia/;
+      botRegexJres = /^\/falconsmedia/; botRegexDom = /^\/doom/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
+      botRegexBmanz = /^\/blessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/savage/;botRegexKum = /^\/kumar/; botRegexJlo = /^\/cardsmedia/;
       botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexSclipz = /^\/daclipz/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\/afcnorth/; botRegexAs = /^\/afcsouth/;
       botRegexAe = /^\/afceast/; botRegexNn = /^\/nfcnorth/; botRegexNe = /^\/nfceast/; botRegexNw = /^\/nfcwest/; botRegexNs = /^\/nfcsouth/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -108,9 +108,9 @@ function respond() {
     postMessage("https://images-na.ssl-images-amazon.com/images/I/41U9MTJDaBL._SY355_.jpg")
     this.res.end();
   } 
-        else if(request.text && botRegexCap.test(request.text)) {
+        else if(request.text && botRegexKum.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://images-na.ssl-images-amazon.com/images/I/41U9MTJDaBL._SY355_.jpg")
+    postMessage("https://resizing.flixster.com/dBpDcee1g3ztr8Dy9A-Br4L1unE=/300x300/v1.aDs0NTI4O2o7MTc0NjA7MTIwMDs3MDA7NDYw")
     this.res.end();
   } 
         else if(request.text && botRegexYoni.test(request.text)) {
@@ -133,9 +133,9 @@ function respond() {
     postMessage("https://media.giphy.com/media/D1SBnJEaUdZIc/giphy.gif")
     this.res.end();
   }
-      else if(request.text && botRegexBos.test(request.text)) {
+      else if(request.text && botRegexDom.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.wessexscene.co.uk/wp-content/uploads/2016/07/2a71ca20-3902-4ae0-92ed-05f0825071bf.jpg")
+    postMessage("https://i.imgur.com/2mqr2V0.png")
     this.res.end();
   }  
       else if(request.text && botRegexJres.test(request.text)) {
