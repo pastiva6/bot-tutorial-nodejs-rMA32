@@ -110,7 +110,7 @@ function respond() {
   } 
         else if(request.text && botRegexKum.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://resizing.flixster.com/dBpDcee1g3ztr8Dy9A-Br4L1unE=/300x300/v1.aDs0NTI4O2o7MTc0NjA7MTIwMDs3MDA7NDYw.jpg")
+    postMessage("https://img.cinemablend.com/cb/1/4/a/c/a/8/14aca8d8fcb13ec1ee1fbee017755a0bfb4e8ad9cac316d3a843ba116c8bd95a.jpg")
     this.res.end();
   } 
         else if(request.text && botRegexYoni.test(request.text)) {
