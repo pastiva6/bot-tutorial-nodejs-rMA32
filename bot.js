@@ -75,7 +75,7 @@ function respond() {
   }     
               else if(request.text && botRegexDclipz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/embed/itCkdK1OOQ4")
+    postMessage("https://www.youtube.com/embed/1KS6fWWOuWQ")
     this.res.end();
   } 
             else if(request.text && botRegexBtgb.test(request.text)) {
