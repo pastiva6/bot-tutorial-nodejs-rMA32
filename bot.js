@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/boot/;  botRegexDL = /^\/dl/i; botRegexSalt = /^\/jlo/;botRegexRules = /^\/rules/
       botRegexAd=/^\/kendrick/;botRegexGTA = /^\/klampz/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/millen/; botRegexSh = /^\/s/; botRegexWk = /^\/vance/; botRegexCC = /^\/jeff/;
-      botRegexBye = /^\/stan/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexMcg=/^\/mcguffy/; botRegexBlog=/^\/immy/; 
+      botRegexBye = /^\/puff/; botRegexRip =/^\/tony/; botRegexCan =/^\/willie/; botRegexMcg=/^\/mcguffy/; botRegexBlog=/^\/immy/; 
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/kanax/; botRegexQueso = /^\/cheese/;
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexDom = /^\/doom/; botRegexSteph = /^\/steph/; botRegexJoe = /^\/joe/; botRegexYoni = /^\/yoni/;
@@ -252,7 +252,7 @@ function respond() {
   }
   else if(request.text && botRegexBye.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/bless/standings/league");
+    postMessage("https://i.imgur.com/CNz9n0D.png");
     this.res.end();
   }
   else if(request.text && botRegexSh.test(request.text)) {
