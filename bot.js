@@ -175,7 +175,7 @@ function respond() {
   }
       else if(request.text && botRegexKab.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://vimeo.com/241647090")
+    postMessage("https://youtu.be/_VC-iNTN24s")
     this.res.end();
   }
     else if(request.text && botRegexRtro.test(request.text)) {
