@@ -175,7 +175,7 @@ function respond() {
   }
       else if(request.text && botRegexKab.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/watch?v=axhHcIBwdgg")
+    postMessage("https://www.youtube.com/embed/0o9wkjetQp8")
     this.res.end();
   }
     else if(request.text && botRegexRtro.test(request.text)) {
