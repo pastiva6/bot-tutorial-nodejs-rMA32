@@ -175,7 +175,7 @@ function respond() {
   }
       else if(request.text && botRegexKab.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://streamable.com/dkti9")
+    postMessage("https://streamable.com/a6o77")
     this.res.end();
   }
     else if(request.text && botRegexRtro.test(request.text)) {
