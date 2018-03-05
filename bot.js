@@ -50,7 +50,7 @@ function respond() {
   }     
                else if(request.text && botRegexAe.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/0PrJnoE.jpg")
+    postMessage("gRiFf")
     this.res.end();
   }     
               else if(request.text && botRegexNs.test(request.text)) {
