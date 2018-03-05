@@ -65,7 +65,7 @@ function respond() {
   }
               else if(request.text && botRegexNe.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/r51mW8B.jpg")
+    postMessage("https://i.imgur.com/gszy3az.jpg")
     this.res.end();
   }     
               else if(request.text && botRegexNw.test(request.text)) {
