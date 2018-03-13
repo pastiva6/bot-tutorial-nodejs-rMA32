@@ -160,7 +160,7 @@ function respond() {
   }
             else if(request.text && botRegexBanner.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://imgur.com/FAqAoUE.jpg")
+    postMessage("https://i.imgur.com/L1j4siq.jpg")
     this.res.end();
   }
           else if(request.text && botRegexColts.test(request.text)) {
