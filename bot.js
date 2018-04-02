@@ -12,7 +12,7 @@ function respond() {
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/top10/; botRegexQueso = /^\/cheese/;
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexDom = /^\/doom/; botRegexSteph = /^\/steph/; botRegexAc = /^\/ac/; botRegexYoni = /^\/yoni/;
-      botRegexBmanz = /^\/xblessermanz/;botRegexNewz = /^\/news/;botRegexMax = /^\/max/;botRegexSav = /^\/smokeNsavage/;botRegexKum = /^\/kumar/; botRegexJlo = /^\/cardsmedia/;
+      botRegexBmanz = /^\/xblessermanz/;botRegexNewz = /^\/illustrated/;botRegexMax = /^\/max/;botRegexSav = /^\/smokeNsavage/;botRegexKum = /^\/kumar/; botRegexJlo = /^\/cardsmedia/;
       botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexDclipz = /^\/daclipz/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\/afcnorth/; botRegexAs = /^\/afcsouth/;
       botRegexAe = /^\/afceast/; botRegexNn = /^\/nfcnorth/; botRegexNe = /^\/nfceast/; botRegexNw = /^\/nfcwest/; botRegexNs = /^\/nfcsouth/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -25,7 +25,7 @@ function respond() {
   }
             else if(request.text && botRegexNewz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/H8N1J2k.jpg")
+    postMessage("https://i.imgur.com/9bgCSPQ.jpg")
     this.res.end();
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
