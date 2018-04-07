@@ -25,7 +25,7 @@ function respond() {
   }
             else if(request.text && botRegexNewz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/TLqxVhy.jpg")
+    postMessage("https://i.imgur.com/qlnS4Va.jpg")
     this.res.end();
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
