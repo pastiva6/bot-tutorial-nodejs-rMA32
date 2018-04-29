@@ -13,7 +13,7 @@ function respond() {
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexDom = /^\/doom/; botRegexSteph = /^\/steph/; botRegexAc = /^\/ac/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/fantasy/;botRegexNewz = /^\/illustrated/;botRegexMax = /^\/max/;botRegexSav = /^\/smokeNsavage/;botRegexKum = /^\/kumar/; botRegexJlo = /^\/cardsmedia/;
-      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexDclipz = /^\/daclipz/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\/afcnorth/; botRegexAs = /^\/afcsouth/;
+      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexDclipz = /^\/nba/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\/afcnorth/; botRegexAs = /^\/afcsouth/;
       botRegexAe = /^\/afceast/; botRegexNn = /^\/nfcnorth/; botRegexNe = /^\/nfceast/; botRegexNw = /^\/nfcwest/; botRegexNs = /^\/nfcsouth/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
@@ -75,7 +75,7 @@ function respond() {
   }     
               else if(request.text && botRegexDclipz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/embed/nEtLxqq38BU")
+    postMessage("https://www.reddit.com/r/nbastreams/")
     this.res.end();
   } 
             else if(request.text && botRegexBtgb.test(request.text)) {
