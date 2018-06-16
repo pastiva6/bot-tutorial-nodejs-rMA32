@@ -12,7 +12,7 @@ function respond() {
       botRegexL = /^\/teddy/; botRegexBtg = /^\/btg/; botRegexRtro = /^\/steve/; botRegexKab = /^\/top10/; botRegexQueso = /^\/cheese/;
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexDom = /^\/doom/; botRegexSteph = /^\/steph/; botRegexAc = /^\/ac/; botRegexYoni = /^\/yoni/;
-      botRegexBmanz = /^\/fantasy/;botRegexNewz = /^\/illustrated/;botRegexMax = /^\/max/;botRegexSav = /^\/smokeNsavage/;botRegexKum = /^\/kumar/; botRegexJlo = /^\/cardsmedia/;
+      botRegexBmanz = /^\/worldcup/;botRegexNewz = /^\/illustrated/;botRegexMax = /^\/max/;botRegexSav = /^\/smokeNsavage/;botRegexKum = /^\/kumar/; botRegexJlo = /^\/cardsmedia/;
       botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexDclipz = /^\/nba/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\/afcnorth/; botRegexAs = /^\/afcsouth/;
       botRegexAe = /^\/afceast/; botRegexNn = /^\/nfcnorth/; botRegexNe = /^\/nfceast/; botRegexNw = /^\/nfcwest/; botRegexNs = /^\/nfcsouth/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -30,7 +30,7 @@ function respond() {
   } 
           else if(request.text && botRegexBmanz.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1D6_eJEogsBNxl7AJB_41flmOQd8lcM3evhEcJCHaA0o/edit?usp=sharing")
+    postMessage("https://docs.google.com/spreadsheets/d/1X9bAHEYjpvj20Qohf3oUZjs1Xi0s7P6q4rl1HEmm2EU/edit?usp=sharing")
     this.res.end();
   }
               else if(request.text && botRegexAn.test(request.text)) {
