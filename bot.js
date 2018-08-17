@@ -145,7 +145,7 @@ function respond() {
   }  
       else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/bless/forum/forum/6788")
+    postMessage("http://www.daddyleagues.com/bless/forum")
     this.res.end();
   }
                 else if(request.text && botRegexBilly.test(request.text)) {
