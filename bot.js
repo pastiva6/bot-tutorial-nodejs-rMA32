@@ -13,8 +13,7 @@ function respond() {
       botRegexColts = /^\/coltsmedia/; botRegexBanner = /^\/bless/; botRegexBlake = /^\/ace/; botRegexBilly = /^\/billy/; botRegexTrade = /^\/trade/;
       botRegexJres = /^\/falconsmedia/; botRegexDom = /^\/doom/; botRegexSteph = /^\/steph/; botRegexAc = /^\/ac/; botRegexYoni = /^\/yoni/;
       botRegexBmanz = /^\/worldcup/;botRegexNewz = /^\/illustrated/;botRegexMax = /^\/max/;botRegexSav = /^\/smokeNsavage/;botRegexKum = /^\/kumar/; botRegexJlo = /^\/cardsmedia/;
-      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexDclipz = /^\/nba/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/; botRegexAw = /^\/afcwest/;botRegexAn = /^\/afcnorth/; botRegexAs = /^\/afcsouth/;
-      botRegexAe = /^\/afceast/; botRegexNn = /^\/nfcnorth/; botRegexNe = /^\/nfceast/; botRegexNw = /^\/nfcwest/; botRegexNs = /^\/nfcsouth/;
+      botRegexSaintz = /^\/saintsmedia/; botRegexBrent = /^\/chargersmedia/; botRegexDclipz = /^\/nba/; botRegexBtgb = /^\/jetsnews/; botRegexCab = /^\/patsmedia/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -32,47 +31,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/spreadsheets/d/1X9bAHEYjpvj20Qohf3oUZjs1Xi0s7P6q4rl1HEmm2EU/edit?usp=sharing")
     this.res.end();
-  }
-              else if(request.text && botRegexAn.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/4u51I2z.jpg")
-    this.res.end();
   }   
-              else if(request.text && botRegexAs.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/cZXNQYJ.jpg")
-    this.res.end();
-  }     
-              else if(request.text && botRegexAw.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/e980sJE.jpg")
-    this.res.end();
-  }     
-               else if(request.text && botRegexAe.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("gRiFf")
-    this.res.end();
-  }     
-              else if(request.text && botRegexNs.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/bv1c2il.jpg")
-    this.res.end();
-  }     
-              else if(request.text && botRegexNn.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/OpSEeUV.jpg")
-    this.res.end();
-  }
-              else if(request.text && botRegexNe.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/gszy3az.jpg")
-    this.res.end();
-  }     
-              else if(request.text && botRegexNw.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.imgur.com/K8hPQQl.jpg")
-    this.res.end();
-  }     
               else if(request.text && botRegexDclipz.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://www.reddit.com/r/nbastreams/")
